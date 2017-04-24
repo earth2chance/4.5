@@ -36,10 +36,10 @@ int main(){
 				else if (userNumber == die){
 					std::cout << "Computer is right!" << std::endl;
 					computerGuess = true;
-				std::cout << "Computer has used " << chances << " of 5 chances" << std::endl;
-				std::cout << " " << std::endl;
+				std::cout << "Computer has used " << chances << " of 5 chances\n" << std::endl;
+				
 				}
-			} while (chances < 5 || computerGuess == false);
+			} while (chances < 5 && computerGuess != true);
 			break;
 		case 'm':
 			std::cout << "Pick a number for the computer to guess between 1 and 100 " << std::endl;
@@ -56,10 +56,10 @@ int main(){
 				else if (userNumber == die){
 					std::cout << "Computer is right!" << std::endl;
 					computerGuess = true;
-					std::cout << "Computer has used " << chances << " of 5 chances" << std::endl;
-					std::cout << " " << std::endl;
+					std::cout << "Computer has used " << chances << " of 5 chances\n" << std::endl;
+					
 				}
-			} while (chances < 5 || computerGuess == false);
+			} while (chances < 5 && computerGuess != true);
 			break;
 		case 'h':
 			std::cout << "Pick a number for the computer to guess between 1 and 10 " << std::endl;
@@ -76,10 +76,10 @@ int main(){
 				else if (userNumber == die){
 					std::cout << "Computer is right!" << std::endl;
 					computerGuess = true;
-				std::cout << "Computer has used " << chances << " of 5 chances" << std::endl;
-				std::cout << " " << std::endl;
+				std::cout << "Computer has used " << chances << " of 5 chances\n" << std::endl;
+				
 				}
-			} while (chances < 5 || computerGuess == userNumber);
+			} while (chances < 5 && computerGuess != true);
 			break;
 
 	}
